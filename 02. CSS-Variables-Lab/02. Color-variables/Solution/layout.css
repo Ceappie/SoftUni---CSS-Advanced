@@ -1,0 +1,46 @@
+html {
+    color: var(--primary-font-color);
+}
+
+body {
+    padding: 2rem;
+    font-family: sans-serif;
+    width: 70%;
+    margin: 1rem auto;
+}
+
+section {
+    padding: 2rem 1rem;
+    border-radius: 0.3em;
+    border: 0.1em solid var(--primary-bgbr-color);
+}
+
+section ul {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+section ul li p {
+    display: block;
+    padding: 0.7rem 0 1rem 0;
+}
+
+section ul li button {
+    float: bottom;
+    padding: 0.5rem;
+    border-radius: 0.3em;
+    border-style: none;
+    background: var(--primary-bgbr-color);
+    color: var(--primary-btn-color);
+}
+
+section ul li button:hover {
+    background: var(--primary-font-color);
+    color: var(--primary-bgbr-color);
+}
+
+li {
+    list-style: none;
+    width: 31%;
+}

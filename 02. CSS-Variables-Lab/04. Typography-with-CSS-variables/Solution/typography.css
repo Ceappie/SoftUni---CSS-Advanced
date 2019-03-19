@@ -1,0 +1,57 @@
+html {
+    font-family: sans-serif;
+    font-size: var(--mwidth-fs-mobile);
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: calc(var(--mwidth-fs-mobile) * 2.5);
+    font-weight: bold;
+}
+
+h2 {
+    font-size: calc(var(--mwidth-fs-mobile) * 2);
+}
+
+article {
+    width: 85%;
+    margin: 1rem auto;
+}
+
+article p {
+    padding: 0.7rem 0;
+}
+
+article ul {
+    padding-left: 3rem;
+}
+
+@media (min-width: 700px) {
+    html {
+        font-size: var(--mwidth-fs-laptop);
+    }
+
+    h1 {
+        font-size: calc(var(--mwidth-fs-laptop) * 2.5);
+        font-weight: bold;
+    }
+    
+    h2 {
+        font-size: calc(var(--mwidth-fs-laptop) * 2);
+    }
+}
+
+@media (min-width: 1600px) {
+    html {
+        font-size: var(--mwidth-fs-desktop);
+    }
+
+    h1 {
+        font-size: calc(var(--mwidth-fs-desktop) * 2.5);
+        font-weight: bold;
+    }
+    
+    h2 {
+        font-size: calc(var(--mwidth-fs-desktop) * 2);
+    }
+}
