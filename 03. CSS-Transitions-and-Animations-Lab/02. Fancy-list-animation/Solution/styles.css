@@ -1,0 +1,102 @@
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+
+:root {
+    --basic-animation-duration: 1s;
+    --basic-animation-delay: 0.3s;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul li {
+    list-style: none;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+ul li i {
+    width: 15%;
+    margin-right: 0.6rem;
+}
+
+ul li:nth-child(1) {
+    position: relative;
+    opacity: 0;
+    animation-name: list-animation;
+    animation-duration: var(--basic-animation-duration);
+    animation-fill-mode: forwards;
+}
+
+ul li:nth-child(2) {
+    position: relative;
+    opacity: 0;
+    animation-name: list-animation;
+    animation-duration: var(--basic-animation-duration);
+    animation-delay: var(--basic-animation-delay);
+    animation-fill-mode: forwards;
+}
+
+ul li:nth-child(3) {
+    position: relative;
+    opacity: 0;
+    animation-name: list-animation;
+    animation-duration: var(--basic-animation-duration);
+    animation-delay: calc(var(--basic-animation-delay) * 2);
+    animation-fill-mode: forwards;
+}
+
+ul li:nth-child(4) {
+    position: relative;
+    opacity: 0;
+    animation-name: list-animation;
+    animation-duration: var(--basic-animation-duration);
+    animation-delay: calc(var(--basic-animation-delay) * 3);
+    animation-fill-mode: forwards;
+}
+
+ul li:nth-child(5) {
+    position: relative;
+    opacity: 0;
+    animation-name: list-animation;
+    animation-duration: var(--basic-animation-duration);
+    animation-delay: calc(var(--basic-animation-delay) * 4);
+    animation-fill-mode: forwards;
+}
+
+ul li:nth-child(6) {
+    position: relative;
+    opacity: 0;
+    animation-name: list-animation;
+    animation-duration: var(--basic-animation-duration);
+    animation-delay: calc(var(--basic-animation-delay) * 5);
+    animation-fill-mode: forwards;
+}
+
+ul li:nth-child(7) {
+    position: relative;
+    opacity: 0;
+    animation-name: list-animation;
+    animation-duration: var(--basic-animation-duration);
+    animation-delay: calc(var(--basic-animation-delay) * 6);
+    animation-fill-mode: forwards;
+}
+
+@keyframes list-animation {
+    0% {
+        left: -5rem;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+

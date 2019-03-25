@@ -1,0 +1,25 @@
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: circle-to-square;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes circle-to-square {
+    from {
+        background-color: red;
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+    }
+    to {
+        background-color: orange;
+        border-radius: 0;
+        width: 8rem;
+        height: 8rem;
+    }
+}
