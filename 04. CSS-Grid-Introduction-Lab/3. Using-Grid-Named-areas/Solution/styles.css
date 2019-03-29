@@ -1,0 +1,48 @@
+:root {
+    --bg-color: #000;
+    --font-colot: #FFF;
+    --basic-item-padding: 1.5rem;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header header header"
+                         "main main sidebar"
+                         "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin: 1rem 7rem;
+}
+
+header {
+    grid-area: header;
+    background: var(--bg-color);
+    color: var(--font-colot);
+    padding: var(--basic-item-padding);
+}
+
+main {
+    grid-area: main;
+    background: var(--bg-color);
+    color: var(--font-colot);
+    padding: var(--basic-item-padding);
+}
+
+.side-bar {
+    grid-area: sidebar;
+    background: var(--bg-color);
+    color: var(--font-colot);
+    border-radius: 0.2em;
+    padding: var(--basic-item-padding);
+}
+
+footer {
+    grid-area: footer;
+    background: var(--bg-color);
+    color: var(--font-colot);
+    padding: var(--basic-item-padding);
+}
